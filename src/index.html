@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="./index.ts" type="module"></script>
+    <h1></h1>
+    <button id="togglePlay">Toggle Play</button>
+    <audio
+      id="track"
+      src="data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA"
+    ></audio>
+    <div id="guesses">
+      <div id="guess1">[]</div>
+      <div id="guess2">[]</div>
+      <div id="guess3">[]</div>
+      <div id="guess4">[]</div>
+      <div id="guess5">[]</div>
+    </div>
+    <div id="guess">
+      <input type="text" />
+      <ul id="options">
+        <li>Option 1</li>
+        <li>Option 2</li>
+        <li>Option 3</li>
+        <li>Option 4</li>
+      </ul>
+    </div>
+    <div id="buttons">
+      <div id="skip">skip</div>
+      <div id="submit">submit</div>
+    </div>
+
+    <app-progress-bar for="track"></app-progress-bar>
+    <app-play-button for="track"></app-play-button>
+    <div id="playlist"></div>
+    <ul>
+      <li><input type="checkbox" />Search all songs</li>
+      <li><input type="checkbox" />Limit playback</li>
+      <li><input type="checkbox" />Guess logic</li>
+      <li>
+        <input type="checkbox" /> Endpoint
+        <ul>
+          <li><input type="checkbox" />Update auth</li>
+          <li><input type="checkbox" />Read playlist id</li>
+          <li><input type="checkbox" />Pick one at random</li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>

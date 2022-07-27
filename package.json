@@ -1,0 +1,16 @@
+{
+  "name": "hurdle",
+  "version": "1.0.0",
+  "description": "",
+  "default": "index.html",
+  "scripts": {
+    "dev": "BUILD_TIME=$(date) parcel src/index.html",
+    "build": "BUILD_TIME=$(date) parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.6.2"
+  }
+}
